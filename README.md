@@ -26,13 +26,13 @@ python anilist.py <id> <anime|manga>
 
 id: the anilist id of the series you want info about
 
-anime|manga: indicate wether the given id is for an anime or manga series
+anime|manga: indicate whether the given id is for an anime or manga series
 
 ## Security
 
 This script will store a generated a access token in plaintext in the same directory.
 
-Since this is a limted access token that will expire in an hour, of someone has access to this token they will be able to use the API on your client's behalf.
+Since this is a limted access token that will expire in an hour, if someone has access to this token they will be able to use the API on your client's behalf.
 
 Also, it's a good idea to remove your client id and secret key from the script after you are done.
 
