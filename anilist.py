@@ -5,12 +5,12 @@ import sys
 import traceback
 import time
 import json
+from anilist_config import aniclient, anisecret
 
-# please set these constant variables before you run or bad things will happen
+ANICLIENT = aniclient
+ANISECRET = anisecret
 
-ANICLIENT = ''
-ANISECRET = ''
-
+# Leave this variable alone, go to anilist_config.py
 access_token = ''
 
 def usage():
@@ -101,7 +101,9 @@ def main():
 
     print('\nOUTPUT:\n')
 
-    print(media_info['title_romaji'] + '\n')
-    print(media_info['description'] + '\n')
-
+    if not media_info:
+        print ('Series does not exist')
+    else:
+        print(media_info['title_romaji'] + '\n')
+        print(media_info['description'] + '\n')
 main()

@@ -14,7 +14,7 @@ Uses python 3 and the [python-requests](http://docs.python-requests.org/en/maste
 
 1. Ensure you have an account at anilist.co
 2. Register an API client on the website under 'developer settings'
-3. Input the clientid and secret as const variables at the top of the script
+3. Input the clientid and secret as variables at the top of the anilist_config.py file
 
 ## Usage
 
@@ -32,7 +32,7 @@ anime|manga: indicate whether the given id is for an anime or manga series
 
 This script will store a generated a access token in plaintext in the same directory.
 
-Since this is a limted access token that will expire in an hour, if someone has access to this token they will be able to use the API on your client's behalf.
+Since this is a limited access token that will expire in an hour, if someone has access to this token they will be able to use the API on your client's behalf.
 
 Also, it's a good idea to remove your client id and secret key from the script after you are done.
 
