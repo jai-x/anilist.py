@@ -5,7 +5,7 @@ import sys
 import traceback
 import time
 import json
-from anilist_config import aniclient, anisecret
+from .anilist_config import aniclient, anisecret
 
 ANICLIENT = aniclient
 ANISECRET = anisecret
